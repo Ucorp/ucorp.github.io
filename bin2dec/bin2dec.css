@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --transition-duration: .1s;
+  --transition-timing-fn: ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.bin2dec {
+  padding: 20px;
+  max-width: 320px;
+}
+
+.bin2dec__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bin2dec__label {
+  margin-bottom: 10px;
+}
+
+.bin2dec__input {
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  transition: border var(--transition-duration) var(--transition-timing-fn);
+}
+.bin2dec__input:focus {
+  outline: none;
+  border-color: #4c6eaa;
+}
+
+.bin2dec__button {
+  height: 50px;
+  margin-top: 10px;
+  background: #4c6eaa;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 18px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-timing-fn);
+}
+.bin2dec__button:hover,
+.bin2dec__button:focus {
+  outline: none;
+  background-color: #203253;
+}
+
+.bin2dec__result {
+  margin-top: 10px;
+}
