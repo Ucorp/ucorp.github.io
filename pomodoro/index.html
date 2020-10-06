@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="/pomodoro/main.css">
+  <script type="module" src="/pomodoro/main.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="app-title">Pomodoro Timer</h1>
+    <div class="app">
+      <div class="pomodoro">
+        <div class="pomodoro__title pomodoro__title--skeleton skeleton"></div>
+        <div class="pomodoro__timer timer">
+          <span class="timer__skeleton-digit"></span>
+          <span class="timer__skeleton-divider">:</span>
+          <span class="timer__skeleton-digit"></span>
+        </div>
+        <div class="pomodoro__progress-bar"><span></span></div>
+      </div>
+      <div class="pomodoro-list">
+        <div class="pomodoro-list__items">
+          <div class="pomodoro-list__item pomodoro-list__item--skeleton skeleton"><span></span></div>
+          <div class="pomodoro-list__item pomodoro-list__item--skeleton skeleton"><span></span></div>
+          <div class="pomodoro-list__item pomodoro-list__item--skeleton skeleton"><span></span></div>
+          <div class="pomodoro-list__item pomodoro-list__item--skeleton skeleton"><span></span></div>
+        </div>
+        <div class="pomodoro-list__note pomodoro-list__note--skeleton skeleton"></div>
+      </div>
+      <div class="pomodoro-control">
+        <button type="button" class="pomodoro-control__button" disabled>
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M8 5.14V19.14L19 12.14L8 5.14Z" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
